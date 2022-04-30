@@ -1,0 +1,256 @@
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+:root {
+    --light-menu-color: #ffffff;
+    --dark-menu-color: #363636;
+    --border-top-color: rgb(0, 0, 0, .1);
+    --link-hover-color: rgb(255, 255, 255, .2);
+    --title-font-family: 'My Soul', cursive;
+    --body-font-family: 'cursive';
+    --container-width: 96rem;
+    --container-padding: 1.5rem;
+    --section-vertical-spacing: 8rem;
+
+    --light-color: #f3f3f3;
+    --dark-color: #111;
+    --hover-color: red;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--dark-color);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: red;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font-family);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    overflow-x: hidden;
+}
+
+body.dark-theme {
+    --dark-menu-color: #ffffff;
+    --light-menu-color: #363636;
+    --border-top-color: rgb(255, 255, 255, .1);
+    --dark-color: #f3f3f3;
+    --light-color: #111;
+}
+
+
+.header {
+    position: fixed;
+    z-index: 999;
+    background-color: var(--light-color);
+    padding-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 30px; */
+}
+
+.logo img{
+    align-self: center;
+    border: purple   5px solid;
+    height: 90px;
+    width: 90px;
+}
+
+.hp {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    /* justify-content: right; */
+    gap: 10px;
+}
+
+.header .hp .navbar a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.header .hp .navbar a:hover {
+    background-color: var(--hover-color);
+}
+
+
+.theme-on {
+    display: none;
+}
+
+.dark-theme .theme-off {
+    display: none;
+}
+
+.dark-theme .theme-on {
+    display: block;
+}
+
+#menu-btn {
+    font-size: 3rem;
+    color: var(--dark-color);
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    margin-top: 600px;
+}
+
+.pla{
+    margin: auto;
+    text-align: center;
+    text-decoration: underline 3px solid var(--dark-color);
+}
+
+.playerlist{
+    font-size: 18px;
+    gap: 30px;
+    display: grid;
+    padding-left: 50px;
+}
+
+.playerlist a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.playerlist a:hover{
+    background-color: var(--hover-color);
+}
+
+.jlcyborg{
+    display: flex;
+    justify-content: space-around;
+}
+
+.images{
+    height: 10rem;
+    width: 10rem;
+}
+
+.quicklinks{
+    display: grid;
+    padding-left: 50px;
+}
+
+.quicklinks a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.quicklinks a:hover{
+    background-color: var(--hover-color);
+}
+
+.footer-container{
+    bottom: 0;
+    background-color: var(--light-menu-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 80%;
+    }
+
+}
+
+@media (max-width:868px) {
+
+    #menu-btn {
+        font-size: 2rem;
+        color: var(--dark-color);
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--light-menu-color);
+        color: var(--dark-color);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .hp {
+        align-items: center;
+    }
+
+    .hp .navbar a {
+        color: var(--dark-color);
+        padding: 10px;
+        font-size: 2rem;
+        display: block;
+    }
+
+    .active {
+        display: block;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .logo img{
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 60%;
+    }
+
+    .logo img{
+        height: 50px;
+        width: 50px;
+    }
+
+
+}
