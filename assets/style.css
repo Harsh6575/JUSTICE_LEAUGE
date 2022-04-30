@@ -79,9 +79,9 @@ body.dark-theme {
     /* padding: 30px; */
 }
 
-.logo img{
+.logo img {
     align-self: center;
-    border: purple   5px solid;
+    border: purple 5px solid;
     height: 90px;
     width: 90px;
 }
@@ -129,64 +129,68 @@ body.dark-theme {
     display: none;
 }
 
-.home{
-    margin-top: 600px;
+.home {
+    padding: 0px 30px;
 }
 
-.pla{
+.pla {
     margin: auto;
     text-align: center;
     text-decoration: underline 3px solid var(--dark-color);
 }
 
-.playerlist{
+.playerlist {
     font-size: 18px;
     gap: 30px;
     display: grid;
     padding-left: 50px;
 }
 
-.playerlist a{
+.playerlist a {
     text-decoration: none;
     color: var(--dark-color);
 }
 
-.playerlist a:hover{
+.playerlist a:hover {
     background-color: var(--hover-color);
 }
 
-.jlcyborg{
+.allclass {
     display: flex;
     justify-content: space-around;
 }
 
-.images{
+.allclass a:hover {
+    background-color: var(--hover-color);
+}
+
+.images {
     height: 10rem;
     width: 10rem;
 }
 
-.quicklinks{
+.quicklinks {
     display: grid;
     padding-left: 50px;
 }
 
-.quicklinks a{
+.quicklinks a {
     text-decoration: none;
     color: var(--dark-color);
 }
 
-.quicklinks a:hover{
+.quicklinks a:hover {
     background-color: var(--hover-color);
 }
 
-.footer-container{
+.footer-container {
     bottom: 0;
     background-color: var(--light-menu-color);
     display: flex;
     justify-content: space-between;
 }
 
-.footer-container a{
+.footer-container a {
     text-decoration: none;
     color: var(--dark-color);
 }
@@ -237,7 +241,7 @@ body.dark-theme {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
-    .logo img{
+    .logo img {
         text-align: center;
     }
 }
@@ -247,7 +251,7 @@ body.dark-theme {
         font-size: 60%;
     }
 
-    .logo img{
+    .logo img {
         height: 50px;
         width: 50px;
     }
