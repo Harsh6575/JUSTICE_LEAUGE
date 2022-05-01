@@ -304,7 +304,6 @@ body.dark-theme {
     border: none;
     outline: none;
     color: var(--dark-color);
-    padding: 14px 16px;
     background-color: var(--light-color);
     font-family: inherit;
     margin: 0;
