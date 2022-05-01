@@ -163,6 +163,9 @@ body.dark-theme {
     text-align: center;
     font-family: var(--pla-font-family);
     text-decoration: underline 3px solid var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .playerlist {
@@ -291,7 +294,7 @@ body.dark-theme {
 
 
 .dropdown {
-    float: left;
+    /* float: left; */
     overflow: hidden;
 }
 
