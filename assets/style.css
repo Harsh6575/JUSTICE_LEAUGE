@@ -15,8 +15,14 @@
     --dark-menu-color: #363636;
     --border-top-color: rgb(0, 0, 0, .1);
     --link-hover-color: rgb(255, 255, 255, .2);
-    --title-font-family: 'My Soul', cursive;
+    --title-font-family: 'My Soul';
     --body-font-family: 'cursive';
+
+    --bgmi-font-family: 'Tapestry', cursive;
+
+    --pla-font-family: 'Orbitron', sans-serif;
+    ;
+
     --container-width: 96rem;
     --container-padding: 1.5rem;
     --section-vertical-spacing: 8rem;
@@ -64,15 +70,24 @@ body.dark-theme {
     --light-color: #111;
 }
 
+.clock {
+    margin-top:140px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+}
 
 .header {
     position: fixed;
-    z-index: 999;
-    background-color: var(--light-color);
-    padding-top: 0;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
+    background-color: var(--light-color);
+    padding-top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -130,12 +145,23 @@ body.dark-theme {
 }
 
 .home {
-    padding: 0px 30px;
+    padding: 0px 50px;
+    color: var(--dark-color);
+}
+
+.description {
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.bgmi {
+    font-family: var(--bgmi-font-family);
 }
 
 .pla {
     margin: auto;
     text-align: center;
+    font-family: var(--pla-font-family);
     text-decoration: underline 3px solid var(--dark-color);
 }
 
@@ -187,7 +213,7 @@ body.dark-theme {
     bottom: 0;
     background-color: var(--light-menu-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around
 }
 
 .footer-container a {
@@ -202,7 +228,7 @@ body.dark-theme {
 
 }
 
-@media (max-width:868px) {
+@media (max-width:560px) {
 
     #menu-btn {
         font-size: 2rem;

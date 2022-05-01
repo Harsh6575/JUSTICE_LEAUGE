@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 
 <!-- buttons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -23,14 +25,14 @@
 <link rel="stylesheet" href="assets/style.css">
 
 
-<body>
-    <header class="header" id="home">
+<body onload="Clock(); setInterval('Clock()',1000);">
+    <header class="header">
         <div class="logo"><a href="assets/jl2.png" target="_blank"><img src="assets/jl2.png" alt="jllogo"></a></div>
         <div class="hp">
             <div id="menu-btn" class="fas fa-bars"></div>
             <nav class="navbar">
                 <a href="#home">Home</a>
-                <a href="#about">About us</a>
+                <!-- <a href="#about">About us</a> -->
                 <a href="#players">Player list</a>
                 <a href="#contact">Contact us</a>
             </nav>
@@ -42,12 +44,23 @@
     </header>
 
     <div id="home">
+        <br>
+        <div class="clock">
+            <div>Current time</div>
+            <div id="clock"></div>
+        </div>
+        <br>
+        <hr>
+        <h3 class="pla">
+            ABOUT US
+        </h3>
+        <hr>
         <div class="description">
             Hey there...🤙
             <br>
             We are Justice leauge.
             <br>
-
+            An E-Sport team of <span class="bgmi">BGMI.</span>
         </div>
     </div>
     <div id="players" class="players">
@@ -156,7 +169,7 @@
             <br>
             <hr>
             <h6 class="pla">
-                JL ARROW(4layMANxBLADE)
+                JL ARROW (4layMANxBLADE)
             </h6>
             <div class="allclass">
                 <h6>
@@ -183,7 +196,7 @@
             <br>
             <hr>
             <h6 class="pla">
-                JL RIYA(4layMANxRIYA)
+                JL RIYA (4layMANxRIYA)
             </h6>
             <div class="allclass">
                 <img src="assets/JL.png" alt="" class="images">
@@ -373,20 +386,30 @@
             </div>
         </div> -->
     </div>
+    <div id="contact" class="contact">
+        <br>
+        <hr>
+        <h3 class="pla">
+            CONTACT US
+        </h3>
+        <hr>
+        <!-- <input type="text" placeholder="enter your mail id" value="" > -->
+    </div>
     <hr>
     <div class="quicklinks">
         <a href="#home">Home</a>
-        <a href="#about">About us</a>
+        <!-- <a href="#about">About us</a> -->
         <a href="#players">Player list</a>
         <a href="#contact">Contact us</a>
     </div>
     <footer class="footer">
         <div class="footer-container">
-            <div>Copyright © 2021 <a href="#home">Justice leauge.</a></div>
+            <div>Copyright © 2022 <a href="#home">Justice leauge.</a></div>
             <div class="policy_terms"> code with ❤️ </div>
         </div>
     </footer>
     <script src="assets/app.js"></script>
+    <script src="assets/clock.js"></script>
 </body>
 
 </html>
