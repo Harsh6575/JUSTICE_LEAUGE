@@ -71,7 +71,7 @@ body.dark-theme {
 }
 
 .clock {
-    margin-top:140px;
+    margin-top: 90px;
     background-color: var(--dark-color);
     color: var(--light-color);
     text-align: center;
@@ -283,4 +283,59 @@ body.dark-theme {
     }
 
 
+}
+
+
+
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--dark-color);
+    padding: 14px 16px;
+    background-color: var(--light-color);
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+    background-color: var(--hover-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--light-menu-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 12px;
+    font-family: var(--body-font-family);
+}
+
+.dropdown-content a {
+    float: none;
+    color: var(--dark-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--hover-color);
+}
+
+.show {
+    display: block;
 }
