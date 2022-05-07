@@ -25,69 +25,74 @@
 <link rel="stylesheet" href="assets/style.css">
 
 
-<body onload="Clock(); setInterval('Clock()',1000);">
-    <header class="header">
-        <div class="logo"><a href="assets/jl2.png" target="_blank"><img src="assets/jl2.png" alt="jllogo"></a></div>
-        <div class="hp">
-            <div id="menu-btn" class="fas fa-bars"></div>
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <!-- <a href="#about">About us</a> -->
-                <a href="#players">Player list</a>
-                <a href="#contact">Contact us</a>
-            </nav>
-            <button type="button" class="theme-toggle-button button icon-button ">
-                <i class="bx bx-toggle-left theme-off"></i>
-                <i class="bx bx-toggle-right theme-on"></i>
-            </button>
-        </div>
-    </header>
+<body onload="Clock(); setInterval('Clock()',1000); LOADER()">
 
-    <div id="home">
-        <br>
-        <div class="clock">
-            <div>Current time</div>
-            <div id="clock"></div>
-        </div>
-        <br>
-        <hr>
-        <h3 class="pla">
-            ABOUT US
-        </h3>
-        <hr>
-        <div class="description">
-            Hey there...🤙
-            <br>
-            We are Justice leauge.
-            <br>
-            An E-Sport team of <span class="bgmi">BGMI.</span>
-        </div>
-    </div>
-    <div id="players" class="players">
-        <br>
-        <hr>
-        <h3 class="pla">
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">LIST
-                    <i class="fa fa-caret-down"></i>
+    <div id="loader"></div>
+    <div id="all">
+
+
+        <header class="header">
+            <div class="logo"><a href="assets/jl2.png" target="_blank"><img src="assets/jl2.png" alt="jllogo"></a></div>
+            <div class="hp">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <nav class="navbar">
+                    <a href="#home">Home</a>
+                    <!-- <a href="#about">About us</a> -->
+                    <a href="#players">Player list</a>
+                    <a href="#contact">Contact us</a>
+                </nav>
+                <button type="button" class="theme-toggle-button button icon-button ">
+                    <i class="bx bx-toggle-left theme-off"></i>
+                    <i class="bx bx-toggle-right theme-on"></i>
                 </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="#jlcyborg"><span>01.</span> JL CYBORG</a>
-                    <a href="#jlflash"><span>02.</span> JL FLASH</a>
-                    <a href="#jlninja"><span>03.</span> JL NINJA</a>
-                    <a href="#jlarrow"><span>04.</span> JL ARROW ( 4layMANxBLADE )</a>
-                    <a href="#jlriya"><span>05.</span> JL RIYA ( 4layMANxRIYA )</a>
-                    <a href="#jlrisky"><span>06.</span> 4layMANxRISKY</a>
-                    <a href="#jlconstantine"><span>07.</span> JL CONSTANTIN</a>
-                    <a href="#jlhitman"><span>08.</span> JL HITMAN</a>
-                    <a href="#jlbatman"><span>09.</span> JL BATMAN</a>
-                    <!-- <a href="#jlc"><span>01.</span>JL CYBORG</a> --><br>
-                </div>
             </div>
-            PLAYER LIST
-        </h3>
-        <hr>
-        <!-- <div class="playerlist">
+        </header>
+
+        <div id="home">
+            <br>
+            <div class="clock">
+                <div>Current time</div>
+                <div id="clock"></div>
+            </div>
+            <br>
+            <hr>
+            <h3 class="pla">
+                ABOUT US
+            </h3>
+            <hr>
+            <div class="description">
+                Hey there...🤙
+                <br>
+                We are Justice leauge.
+                <br>
+                An E-Sport team of <span class="bgmi">BGMI.</span>
+            </div>
+        </div>
+        <div id="players" class="players">
+            <br>
+            <hr>
+            <h3 class="pla">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">LIST
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#jlcyborg"><span>01.</span> JL CYBORG</a>
+                        <a href="#jlflash"><span>02.</span> JL FLASH</a>
+                        <a href="#jlninja"><span>03.</span> JL NINJA</a>
+                        <a href="#jlarrow"><span>04.</span> JL ARROW ( 4layMANxBLADE )</a>
+                        <a href="#jlriya"><span>05.</span> JL RIYA ( 4layMANxRIYA )</a>
+                        <a href="#jlrisky"><span>06.</span> 4layMANxRISKY</a>
+                        <a href="#jlconstantine"><span>07.</span> JL CONSTANTIN</a>
+                        <a href="#jlhitman"><span>08.</span> JL HITMAN</a>
+                        <a href="#jlbatman"><span>09.</span> JL BATMAN</a>
+                        <!-- <a href="#jlc"><span>01.</span>JL CYBORG</a> --><br>
+                    </div>
+                </div>
+                PLAYER LIST
+            </h3>
+            <hr>
+            <!-- <div class="playerlist">
             <a href="#jlcyborg"><span>01.</span> JL CYBORG</a>
             <a href="#jlflash"><span>02.</span> JL FLASH</a>
             <a href="#jlninja"><span>03.</span> JL NINJA</a>
@@ -98,254 +103,254 @@
             <a href="#jlhitman"><span>08.</span> JL HITMAN</a>
             <a href="#jlbatman"><span>09.</span> JL BATMAN</a>
         </div> -->
-        <div id="jlcyborg">
-            <br>
-            <h6 class="pla">
-                JL CYBORG
-            </h6>
-            <div class="allclass">
-                <img src="assets/JL.png" alt="" class="images">
+            <div id="jlcyborg">
+                <br>
+                <h6 class="pla">
+                    JL CYBORG
+                </h6>
+                <div class="allclass">
+                    <img src="assets/JL.png" alt="" class="images">
 
-                <h6>
-                    NAME:- HARSH PATEL
-                    <br>
-                    GAME ID:- 5132658063
+                    <h6>
+                        NAME:- HARSH PATEL
+                        <br>
+                        GAME ID:- 5132658063
+                    </h6>
+                </div>
+                <br>
+                <div class="allclass">
+                    <a href="">
+                        <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon name='instagram' type='logo' color="pink"></box-icon>
+                    </a>
+                </div>
+            </div>
+            <div id="jlflash">
+                <br>
+                <hr>
+                <h6 class="pla">
+                    JL FLASH
                 </h6>
+                <div class="allclass">
+                    <h6>
+                        NAME:- JAIMIN PATEL
+                        <br>
+                        GAME ID:- 5553918863
+                    </h6>
+                    <img src="assets/JL.png" alt="" class="images">
+                </div>
+                <br>
+                <div class="allclass">
+                    <a href="">
+                        <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon name='instagram' type='logo' color="pink"></box-icon>
+                    </a>
+                </div>
             </div>
-            <br>
-            <div class="allclass">
-                <a href="">
-                    <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon name='instagram' type='logo' color="pink"></box-icon>
-                </a>
-            </div>
-        </div>
-        <div id="jlflash">
-            <br>
-            <hr>
-            <h6 class="pla">
-                JL FLASH
-            </h6>
-            <div class="allclass">
-                <h6>
-                    NAME:- JAIMIN PATEL
-                    <br>
-                    GAME ID:- 5553918863
+            <div id="jlninja">
+                <br>
+                <hr>
+                <h6 class="pla">
+                    JL NINJA
                 </h6>
-                <img src="assets/JL.png" alt="" class="images">
-            </div>
-            <br>
-            <div class="allclass">
-                <a href="">
-                    <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon name='instagram' type='logo' color="pink"></box-icon>
-                </a>
-            </div>
-        </div>
-        <div id="jlninja">
-            <br>
-            <hr>
-            <h6 class="pla">
-                JL NINJA
-            </h6>
-            <div class="allclass">
-                <img src="assets/JL.png" alt="" class="images">
+                <div class="allclass">
+                    <img src="assets/JL.png" alt="" class="images">
 
-                <h6>
-                    NAME:- ABHAY PATEL
-                    <br>
-                    GAME ID:- 5415518588
+                    <h6>
+                        NAME:- ABHAY PATEL
+                        <br>
+                        GAME ID:- 5415518588
+                    </h6>
+                </div>
+                <br>
+                <div class="allclass">
+                    <a href="">
+                        <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon name='instagram' type='logo' color="pink"></box-icon>
+                    </a>
+                </div>
+            </div>
+            <div id="jlarrow">
+                <br>
+                <hr>
+                <h6 class="pla">
+                    JL ARROW ( 4layMANxBLADE )
                 </h6>
+                <div class="allclass">
+                    <h6>
+                        NAME:- HEWIN PATEL
+                        <br>
+                        GAME ID:- 586271505
+                    </h6>
+                    <img src="assets/JL.png" alt="" class="images">
+                </div>
+                <br>
+                <div class="allclass">
+                    <a href="">
+                        <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon name='instagram' type='logo' color="pink"></box-icon>
+                    </a>
+                </div>
             </div>
-            <br>
-            <div class="allclass">
-                <a href="">
-                    <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon name='instagram' type='logo' color="pink"></box-icon>
-                </a>
-            </div>
-        </div>
-        <div id="jlarrow">
-            <br>
-            <hr>
-            <h6 class="pla">
-                JL ARROW ( 4layMANxBLADE )
-            </h6>
-            <div class="allclass">
-                <h6>
-                    NAME:- HEWIN PATEL
-                    <br>
-                    GAME ID:- 586271505
+            <div id="jlriya">
+                <br>
+                <hr>
+                <h6 class="pla">
+                    JL RIYA ( 4layMANxRIYA )
                 </h6>
-                <img src="assets/JL.png" alt="" class="images">
-            </div>
-            <br>
-            <div class="allclass">
-                <a href="">
-                    <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon name='instagram' type='logo' color="pink"></box-icon>
-                </a>
-            </div>
-        </div>
-        <div id="jlriya">
-            <br>
-            <hr>
-            <h6 class="pla">
-                JL RIYA ( 4layMANxRIYA )
-            </h6>
-            <div class="allclass">
-                <img src="assets/JL.png" alt="" class="images">
+                <div class="allclass">
+                    <img src="assets/JL.png" alt="" class="images">
 
-                <h6>
-                    NAME:- DEVIN PATEL
-                    <br>
-                    GAME ID:- 5568561415
+                    <h6>
+                        NAME:- DEVIN PATEL
+                        <br>
+                        GAME ID:- 5568561415
+                    </h6>
+                </div>
+                <br>
+                <div class="allclass">
+                    <a href="">
+                        <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon name='instagram' type='logo' color="pink"></box-icon>
+                    </a>
+                </div>
+            </div>
+            <div id="jlrisky">
+                <br>
+                <hr>
+                <h6 class="pla">
+                    4layMANxRISKY
                 </h6>
+                <div class="allclass">
+                    <h6>
+                        NAME:- PRIYANSHU PATEL
+                        <br>
+                        GAME ID:- 55520889832
+                    </h6>
+                    <img src="assets/JL.png" alt="" class="images">
+                </div>
+                <br>
+                <div class="allclass">
+                    <a href="">
+                        <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon name='instagram' type='logo' color="pink"></box-icon>
+                    </a>
+                </div>
             </div>
-            <br>
-            <div class="allclass">
-                <a href="">
-                    <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon name='instagram' type='logo' color="pink"></box-icon>
-                </a>
-            </div>
-        </div>
-        <div id="jlrisky">
-            <br>
-            <hr>
-            <h6 class="pla">
-                4layMANxRISKY
-            </h6>
-            <div class="allclass">
-                <h6>
-                    NAME:- PRIYANSHU PATEL
-                    <br>
-                    GAME ID:- 55520889832
+            <div id="jlconstantine">
+                <br>
+                <hr>
+                <h6 class="pla">
+                    JL CONSTANTIN
                 </h6>
-                <img src="assets/JL.png" alt="" class="images">
-            </div>
-            <br>
-            <div class="allclass">
-                <a href="">
-                    <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon name='instagram' type='logo' color="pink"></box-icon>
-                </a>
-            </div>
-        </div>
-        <div id="jlconstantine">
-            <br>
-            <hr>
-            <h6 class="pla">
-                JL CONSTANTIN
-            </h6>
-            <div class="allclass">
-                <img src="assets/JL.png" alt="" class="images">
+                <div class="allclass">
+                    <img src="assets/JL.png" alt="" class="images">
 
-                <h6>
-                    NAME:- MEET PATEL
-                    <br>
-                    GAME ID:- 5129188549
+                    <h6>
+                        NAME:- MEET PATEL
+                        <br>
+                        GAME ID:- 5129188549
+                    </h6>
+                </div>
+                <br>
+                <div class="allclass">
+                    <a href="">
+                        <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon name='instagram' type='logo' color="pink"></box-icon>
+                    </a>
+                </div>
+            </div>
+            <div id="jlhitman">
+                <br>
+                <hr>
+                <h6 class="pla">
+                    JL HITMAN
                 </h6>
+                <div class="allclass">
+                    <h6>
+                        NAME:- DWIJ PATEL
+                        <br>
+                        GAME ID:- 55517492781
+                    </h6>
+                    <img src="assets/JL.png" alt="" class="images">
+                </div>
+                <br>
+                <div class="allclass">
+                    <a href="">
+                        <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon name='instagram' type='logo' color="pink"></box-icon>
+                    </a>
+                </div>
             </div>
-            <br>
-            <div class="allclass">
-                <a href="">
-                    <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon name='instagram' type='logo' color="pink"></box-icon>
-                </a>
-            </div>
-        </div>
-        <div id="jlhitman">
-            <br>
-            <hr>
-            <h6 class="pla">
-                JL HITMAN
-            </h6>
-            <div class="allclass">
-                <h6>
-                    NAME:- DWIJ PATEL
-                    <br>
-                    GAME ID:- 55517492781
+            <div id="jlbatman">
+                <br>
+                <hr>
+                <h6 class="pla">
+                    JL BATMAN
                 </h6>
-                <img src="assets/JL.png" alt="" class="images">
-            </div>
-            <br>
-            <div class="allclass">
-                <a href="">
-                    <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon name='instagram' type='logo' color="pink"></box-icon>
-                </a>
-            </div>
-        </div>
-        <div id="jlbatman">
-            <br>
-            <hr>
-            <h6 class="pla">
-                JL BATMAN
-            </h6>
-            <div class="allclass">
-                <img src="assets/JL.png" alt="" class="images">
+                <div class="allclass">
+                    <img src="assets/JL.png" alt="" class="images">
 
-                <h6>
-                    NAME:- VIKAS PATEL
-                    <br>
-                    GAME ID:- 5120935434
-                </h6>
+                    <h6>
+                        NAME:- VIKAS PATEL
+                        <br>
+                        GAME ID:- 5120935434
+                    </h6>
+                </div>
+                <br>
+                <div class="allclass">
+                    <a href="">
+                        <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
+                    </a>
+                    <a href="">
+                        <box-icon name='instagram' type='logo' color="pink"></box-icon>
+                    </a>
+                </div>
             </div>
-            <br>
-            <div class="allclass">
-                <a href="">
-                    <box-icon type='logo' name='snapchat' color="yellow"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon type='logo' name='facebook-square' color="blue"></box-icon>
-                </a>
-                <a href="">
-                    <box-icon name='instagram' type='logo' color="pink"></box-icon>
-                </a>
-            </div>
-        </div>
-        <!-- <div id="jlcyborg">
+            <!-- <div id="jlcyborg">
             <br>
             <hr>
             <h6 class="pla">
@@ -400,29 +405,30 @@
                 </a>
             </div>
         </div> -->
-    </div>
-    <div id="contact" class="contact">
-        <br>
-        <hr>
-        <h3 class="pla">
-            CONTACT US
-        </h3>
-        <hr>
-        <!-- <input type="text" placeholder="enter your mail id" value="" > -->
-    </div>
-    <hr>
-    <div class="quicklinks">
-        <a href="#home">Home</a>
-        <!-- <a href="#about">About us</a> -->
-        <a href="#players">Player list</a>
-        <a href="#contact">Contact us</a>
-    </div>
-    <footer class="footer">
-        <div class="footer-container">
-            <div>Copyright © 2022 <a href="#home">Justice leauge.</a></div>
-            <div class="policy_terms"> code with ❤️ </div>
         </div>
-    </footer>
+        <div id="contact" class="contact">
+            <br>
+            <hr>
+            <h3 class="pla">
+                CONTACT US
+            </h3>
+            <hr>
+            <!-- <input type="text" placeholder="enter your mail id" value="" > -->
+        </div>
+        <hr>
+        <div class="quicklinks">
+            <a href="#home">Home</a>
+            <!-- <a href="#about">About us</a> -->
+            <a href="#players">Player list</a>
+            <a href="#contact">Contact us</a>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div>Copyright © 2022 <a href="#home">Justice leauge.</a></div>
+                <div class="policy_terms"> code with ❤️ </div>
+            </div>
+        </footer>
+    </div>
     <script src="assets/app.js"></script>
     <script src="assets/clock.js"></script>
     <script src="assets/dropdown.js"></script>
