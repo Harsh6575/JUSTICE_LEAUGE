@@ -114,6 +114,10 @@ body.dark-theme {
     gap: 10px;
 }
 
+.navbar a {
+    color: var(--dark-color);
+}
+
 .header .hp .navbar a {
     text-decoration: none;
     font-size: 25px;
@@ -288,7 +292,7 @@ body.dark-theme {
 
 }
 
-#loader{
+#loader {
     z-index: 10000;
     background: #111 url(jl2.gif) no-repeat center center;
     position: fixed;
